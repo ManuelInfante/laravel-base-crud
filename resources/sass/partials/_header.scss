@@ -1,0 +1,78 @@
+header{
+
+    .header-banner{
+        background-color: $primary;
+        padding: 3px 0;
+
+        .container > div{
+            margin: 0 20px;
+        }
+    }
+
+    .header-container{
+        height: 80px;
+    
+        .logo{
+        height: 100%;
+    
+        a{
+            height: 100%;
+            transition: all 0.3s;
+    
+            img{
+            height: 75%;
+            }
+    
+            &:hover{
+            transform: scale(0.8);
+            }
+        }
+        }
+    
+        nav{
+        height: 100%;
+    
+        ul{
+            height: 100%;
+    
+            li{
+            min-width: 90px;
+            height: 100%;
+            }
+    
+            a, a:visited{
+            color: $black;
+            line-height: calc(80px - 4px);
+            border-bottom: 4px solid transparent;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+    
+                &.active{
+                    color: $primary;
+                    border-color: $primary;
+                }
+
+                .dropdown{
+                    margin-left: 5px;
+                    color: $primary;
+                    font-size: 8px;
+                    vertical-align: middle;
+                }
+            }
+
+            li:last-child{
+                display: flex;
+                align-items: center;
+                margin-left: 40px;
+
+                input{
+                    text-align: right;
+                    border: none;
+                    border-bottom: 2px solid $primary;
+                }
+            }
+        }
+        }
+    }
+}
