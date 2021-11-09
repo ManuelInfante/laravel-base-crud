@@ -11288,7 +11288,7 @@ textarea.form-control-lg {
 }
 
 .lightgray-text {
-  color: #303030;
+  color: #8a8a8a;
 }
 
 .gray-text {
@@ -11325,6 +11325,10 @@ header .header-banner .container > div {
   margin: 0 20px;
 }
 header .header-container {
+  height: 80px;
+  box-shadow: 0 4px 15px -8px gray;
+}
+header .header-container .container {
   height: 80px;
 }
 header .header-container .logo {
@@ -11377,4 +11381,32 @@ header .header-container nav ul li:last-child input {
   text-align: right;
   border: none;
   border-bottom: 2px solid #0082F9;
+}
+
+.home-comics-container {
+  position: relative;
+  background-color: #e2e2e2;
+  margin-top: 100px;
+  box-shadow: -1px 4px 19px 3px rgba(0, 0, 0, 0.38);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.home-comics-container .comic-card {
+  border: 1px solid gray;
+}
+.home-comics-container .comic-card:not(:first-child, :last-child) {
+  margin: 0 10px;
+}
+.home-comics-container .comic-card:first-child {
+  margin-right: 10px;
+}
+.home-comics-container .comic-card:last-child {
+  margin-left: 10px;
+}
+.home-comics-container .message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(172, 23, 23, 0.445);
+  color: white;
 }

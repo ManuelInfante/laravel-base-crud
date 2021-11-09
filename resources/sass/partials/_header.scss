@@ -11,6 +11,11 @@ header{
 
     .header-container{
         height: 80px;
+        box-shadow: 0 4px 15px -8px gray;
+
+        .container{
+            height: 80px;
+        }
     
         .logo{
         height: 100%;
